@@ -1,0 +1,36 @@
+<openerp>
+    <data>
+	<template id="look_odoo9_enterprise" name="look_odoo9_enterprise" inherit_id="web.assets_backend">
+		 
+		<xpath expr="//link[@href='/web/static/src/css/base.css']" position="replace">
+				<link rel="stylesheet" href="/look_odoo_enterprise/static/src/css/base.css" type="text/css"/>
+		</xpath>
+ 		<xpath expr="." position="inside">
+                <link rel="stylesheet" href="/look_odoo_enterprise/static/src/css/look.css"/>
+                 <script type="text/javascript" src="/look_odoo_enterprise/static/src/js/bootstrap-toggle.js"></script>
+                <script type="text/javascript" src="/look_odoo_enterprise/static/src/js/bs_toggle.js"></script>
+		</xpath>
+
+	</template>
+		<template id="Webclient Bootstrap Manexware" name="webclient_bootstrap_manexware" inherit_id="web.webclient_bootstrap">
+			<xpath expr="//nav[@id='oe_main_menu_navbar']" position="replace">
+				<nav id="oe_main_menu_navbar" class="navbar navbar-inverse" role="navigation" groups="base.group_user,base.group_portal">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+						<a class="navbar-brand o_menu_toggle" href="#"><i class="fa fa-th"></i></a>
+                    </div>
+
+                    <div class="navbar-collapse collapse" id="oe_main_menu_placeholder">
+                        <t t-call="web.menu"/>
+                    </div>
+                </nav>
+			</xpath>
+		</template>
+	</data>
+</openerp>
+
+

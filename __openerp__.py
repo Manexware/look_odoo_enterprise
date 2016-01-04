@@ -1,0 +1,16 @@
+{
+    'name': 'Look Odoo 9 enterprise',
+    'version': '1.0',
+        'sequence': 1,
+    'category': 'Web',
+    'summary': 'Look and feel Odoo v9 Enterprise',
+    'description':"Look and feel Odoo v9 Enterprise",
+    'author': 'Manexware S.A.',
+    'website': 'http://www.manexware.com',
+    'depends': ['web',
+                ],
+    'data': ['views/webclient_look_templates.xml'],
+    'installable': True,
+    'auto_install': False,
+    'application': False,
+}
